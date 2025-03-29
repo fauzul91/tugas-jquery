@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Kelompok 1</title>
+    <!-- Menghubungkan ke CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="jquery-icon.svg" type="icon">
+</head>
+<body>
+    <div class="login-form">
+        <aside>
+            <h1>Welcome <span>Back</span></h1>
+        </aside>
+        <form id="loginForm">
+            <h1 class="login-title">Login</h1>
+            <div class="form-input">
+                <div class="input-group">
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <span class="error" id="errorFirstName"></span>
+                </div>
+            
+                <div class="input-group">
+                    <input type="text" id="lastName" placeholder="Last Name">
+                    <span class="error" id="errorLastName"></span>
+                </div>
+            
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email">
+                    <span class="error" id="errorEmail"></span>
+                </div>
+            
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="error" id="errorPassword"></span>
+                </div>
+            
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                    <span class="error" id="errorConfirmPassword"></span>
+                </div>
+            </div>             
+            <button id="btn-login">Login</button>               
+        </form>
+        <!-- Modal -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <h2>Success!</h2>
+                <p>Form berhasil dikirim.</p>
+                <button id="closeModal">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Menghubungkan JQuery Lewat CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+
+    <!-- Menghubungkan Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
