@@ -30,6 +30,10 @@ $(document).ready(function () {
             $("#errorPassword").text("Password tidak boleh kosong!");
             isValid = false;
         }
+        else if (password.length < 8) {
+            $("#errorPassword").text("Password minimal 8 karakter!");
+            isValid = false;
+        }
         else if (confirmPassword === "") {
             $("#errorConfirmPassword").text("Konfirmasi Password harus diisi!");
             isValid = false;
